@@ -140,6 +140,7 @@ body {
 .section-container {
     padding: 60px 15px;
     max-width: 800px;
+    width: 100%;
 }
 
 .section-title {
@@ -239,6 +240,23 @@ body {
 .chess {
     background: url(./assets/chess.jpg);
 }
+.dtu {
+    background: url(./assets/dtu.png);
+}
+.next {
+    background: url(./assets/next.png);
+}
+.education-card-container {
+    display: flex;
+    align-items: center;
+}
+.education-card-logo {
+    background-position: center;
+    width: 300px;
+    background-size: contain;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+}
 .project-img {
     border-radius: 2px 2px 0px 0px;
 
@@ -247,6 +265,10 @@ body {
     
     background-size: cover;
     background-position: center;
+}
+
+.contact-container {
+    height: 400px;
 }
 
 /* Mobile Devices (Portrait and Landscape) */

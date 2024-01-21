@@ -12,29 +12,23 @@ class Navbar extends Component {
     }
 
     handleScroll = () => {
-        let scrollY = window.scrollY;
-  
-        // Now we loop through sections to get height, top and ID values for each
+        // Check for bottom
+        if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+            this.setState({
+                active: "contact",
+            });
+            return;
+        }
+
         let sections = document.getElementsByClassName("section")
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 50;
-            let sectionId = current.getAttribute("id");
             
-            /*
-            - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-            - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
-            */
-            if (
-                scrollY > sectionTop &&
-                scrollY <= sectionTop + sectionHeight
-            ){
-                console.log(sectionId)
+            if (window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight) {
                 this.setState({
-                    active: sectionId,
+                    active: current.getAttribute("id"),
                 });
-            } else {
-                
             }
         });
     }
