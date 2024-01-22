@@ -1,0 +1,30 @@
+{
+    "education": [
+        {
+            "date": "2024-2026",
+            "institution": "Technical University of Denmark",
+            "title": "MSc. Computer Science in Engineering",
+            "description": "A Computer Science Master with a passion for innovation and problem-solving. I bring advanced expertise in algorithm design, data structures, and software engineering, coupled with a commitment to staying at the forefront of technological advancements."
+        },
+        {
+            "date": "2020-2024",
+            "institution": "Technical University of Denmark",
+            "title": "BSc. Software Technology",
+            "description": "As a Computer Science Bachelor, I possess a solid foundation in programming, algorithms, and software development. My academic journey has equipped me with the skills to approach complex problems analytically and to contribute effectively in the dynamic field of computer science."
+        },
+        {
+            "date": "2016-2019",
+            "institution": "NEXT - Vibenshus Gymnasium",
+            "title": "HTX - Mathematics and IT",
+            "description": "During high school, I pursued a comprehensive study in Mathematics and Information Technology, laying the groundwork for my analytical and technical capabilities. This dual focus honed my problem-solving skills and provided a solid foundation for my academic and professional journey in the fields of mathematics and IT."
+        }
+    ],
+    "skills": {
+            "languages": ["Python", "C", "C++", "HTML/CSS", "JavaScript"],
+            "tools": ["Windows", "Linux", "Git", "VS Code"],
+            "courses": ["Software Engineering", "Computer Systems", "Computer Science Modelling",
+            "High-Performance Computing", "Operating Systems", "Graph Theory",
+            "Algorithms and Data Structures I & II", "Discrete Mathematics I & II"]
+        }
+    
+}

@@ -16,13 +16,14 @@ function App() {
         <div className='App'>
             <Banner/>
             <Navbar/>
-            <div className="content-wrapper">
-                <About/>
-                <Education/>
-                <Experience/>
-                <Projects/>
-                <Contact/>
-            </div>
+        
+            <About/>
+            <Education/>
+            <Experience/>
+            <Skills/>
+            <Projects/>
+            <Contact/>
+        
         </div>
         
     );

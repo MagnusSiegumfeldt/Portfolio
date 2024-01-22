@@ -21,7 +21,9 @@ html {
 .no-background {
     background:none;
 }
-
+.center {
+    text-align: center;
+}
 
 
 .navbar-container {
@@ -144,9 +146,9 @@ body {
 }
 
 .section-title {
-    margin: 5px 0px;
+    margin: 40px 0px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .section-content {
@@ -154,6 +156,7 @@ body {
 }
 
 .about-content {
+    margin: 100px 0px;
     display: flex;
     gap: 20px;
 
@@ -180,24 +183,30 @@ body {
     max-width: 200px;
     
 }
+.education-card-container {
+    display: flex;
+}
 
 .education-card {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
     margin: 20px 0px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-
+    min-width: 200px;
 }
 
 .education-card-date {
-    margin: 10px 0px;
     font-weight: 700;
     color: rgb(155, 122, 199);
 }
 
 .education-card-title {
-    margin: 0px 0px;
+    margin: 10px 0px 0px 0px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -209,6 +218,7 @@ body {
 }
 
 .education-card-content {
+    flex:3;
     margin: 10px 0px;
 }
 .project-content-container {
@@ -218,6 +228,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
+    margin: 100px 0px;
 }
 .project-card {
     background: #fff;
@@ -246,13 +257,11 @@ body {
 .next {
     background: url(./assets/next.png);
 }
-.education-card-container {
-    display: flex;
-    align-items: center;
-}
+
 .education-card-logo {
+    flex:1;
     background-position: center;
-    width: 300px;
+    width: 100px;
     background-size: contain;
     aspect-ratio: 1;
     background-repeat: no-repeat;
@@ -271,6 +280,29 @@ body {
     height: 400px;
 }
 
+
+.skill-card-container {
+    display: flex;
+}
+
+.skill-card {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    min-width: 200px;
+}
+.skill-card-title {
+    margin: 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 /* Mobile Devices (Portrait and Landscape) */
 @media only screen and (max-width: 767px) {
     .about-content {
@@ -280,16 +312,23 @@ body {
         height: 150px;
 
     }
+    .education-card-container {
+        flex-direction: column;
+    }
 }
 
 /* Tablets and Small Screens (Portrait and Landscape) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Styles for tablets and small screens */
+    .education-card-container {
+        flex-direction: column;
+    }
 }
 
 /* Desktops and Medium Screens */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    /* Styles for desktops and medium screens */
+    .education-card-container {
+        flex-direction: column;
+    }
 }
 
 /* Large Screens (Desktops and TVs) */

@@ -1,29 +1,27 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 
-const EducationCard = () => {
-    return (
-        <div className="education-card">
-            <div className="education-card-container">
-                <div className="education-card-logo dtu">
-                </div>
-                <div className="education-card-content">
+
+
+
+class EducationCard extends Component {
+    render() {
+        return (
+            <div className="education-card">
                     <div className="education-card-date">
-                        2024 - 2026
+                        {this.props.education.date}
                     </div>
                     <div className="education-card-title">
-                        Technical University of Denmark
+                        {this.props.education.institution}
                     </div>
                     <div className="education-card-subtitle">
-                        MSc. Computer Science in Engineering
+                        {this.props.education.title}
                     </div>
                     <div className="education-card-content">
-                        A Computer Science Master with a passion for innovation and problem-solving. I bring advanced expertise in algorithm design, data structures, and software engineering, coupled with a commitment to staying at the forefront of technological advancements.
+                        {this.props.education.description}  
                     </div>
-                </div>
-            </div>
             
-        </div>
-    )
+            </div>
+        )
+    }
 }
-
 export default EducationCard; 

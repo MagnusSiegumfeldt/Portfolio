@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div id="projects" className="content-container alt-background section">
             <div className="section-container">
-                <div className="section-title">Projects</div>
+                <div className="section-title center">Projects</div>
                 <div className="project-container">
                     <div className="project-card">
                         <div className="project-img chess"></div>
