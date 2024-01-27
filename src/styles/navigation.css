@@ -1,0 +1,148 @@
+.menu-container {
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 3;
+}
+.menu-item {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.5s ease;
+}
+.menu-item a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--light-font-color);
+}
+.menu-item.highlight {
+    background-color: var(--theme-color);
+}
+.menu-item.highlight p {
+    color: #fff;
+}
+.nav-item.active {
+    background-color: #e2e2e2;
+}
+
+
+
+.mobile-header {
+    display: none;
+}
+
+
+.mobile-header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    z-index: 3;
+}
+.mobile-header svg{
+    padding: 0px 15px;
+}
+
+
+.mobile-menu-container {
+    background-color: #fff;
+    position: fixed;
+    border-radius: 0px;
+    padding: 0px;
+    top: 0px;
+    width: 80%;
+    height: 100vh;
+    right: -80%;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    z-index: 4;
+    touch-action: none;
+    transition: right 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.mobile-menu-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.1s ease;
+}
+.mobile-menu-item:hover {
+    background-color: var(--background-hover);
+}
+.mobile-menu-item a {
+    color: var(--light-font-color);
+}
+.mobile-menu-item.highlight {
+    cursor: pointer;
+    background-color: var(--theme-color);
+    
+}
+.mobile-menu-item.highlight:hover {
+    background-color: var(--theme-color-hover);
+}
+.mobile-menu-item.highlight p {
+    color: #fff;
+}
+.mobile-menu-container.open {
+    right: 0px;
+}
+.mobile-menu-header {
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 7px 15px;
+
+}
+.mobile-menu-img {
+    display: flex;
+    background: url(../assets/944.jpg);
+    background-size: contain;
+    flex: 1;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    max-width: 40px;
+
+}
+.mobile-menu-close-icon {
+    margin-left: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

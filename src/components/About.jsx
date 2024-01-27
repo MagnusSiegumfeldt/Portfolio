@@ -1,17 +1,24 @@
-import React, { useState } from "react"; 
-
+import React from "react"; 
+import data from "../assets/data/data.json"
 const About = () => { 
     return ( 
-        <div id="about" className="content-container section"> 
-            <div className="section-container">
-                <div className="section-title center">Who am i?</div>
-                <div className="section-content about-content">
-                    <div className="about-text">
-                    I'm a 23-year-old computer science student currently in my first year of master's studies. I find joy in exploring board games, spending time in my dorm kitchen, and staying active through sports. Passionate about technology and always eager to learn, I'm on a journey to blend my academic pursuits with my diverse interests.
+        <div id="about" className="section-outer"> 
+            <div className="section-wrapper-narrow">
+                <div className="flex-col-l">
+                    <div className="section-title">Who am i?</div>
+                    <div className="flex-row-l flex-row-reverse-col">
+                        <div className="about-text">
+                        { 
+                            data.about.map((elem, idx) => (
+                                <div key={idx}>{ elem }</div>
+                            )) 
+                        }
+                        </div>
+                        <div className="about-img-container">
+                            <div className="about-img"></div>
+                        </div>
                     </div>
-                    <div className="about-img-container">
-                        <div className="about-img"></div>
-                    </div>
+                        
                 </div>
             </div>
         </div>

@@ -1,0 +1,139 @@
+.education-card-wrapper {
+    flex:1;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+.education-card {
+    z-index: 2;
+    position: relative;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    min-width: 200px;
+    
+}
+.education-circle-wrapper {
+    display: flex;
+    justify-content: center;
+    
+
+}
+.education-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+}
+.education-arrow-wrapper {
+    z-index: 1;
+    left: 50%;
+    top: 10px;
+    transform:translate(-50%, -10px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+.education-arrow {
+    z-index: 1;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+.education-card-date {
+    font-weight: 700;
+    color: rgb(155, 122, 199);
+}
+
+.card-title {
+    margin: 10px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: inherit;
+}
+
+.card-subtitle {
+    color:rgb(163, 163, 163);
+    font-weight: 700;
+    margin: 0px 0px;
+}
+
+.card-description {
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.modal-content {
+    flex:1;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .education-card-container {
+        flex-direction: column;
+    }
+    .education-card {
+        margin-bottom: 40px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card-title {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+    
+}

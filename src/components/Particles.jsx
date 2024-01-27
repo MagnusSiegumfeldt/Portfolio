@@ -7,12 +7,33 @@ class Particles extends Component {
     
     constructor() {
         super();
-        this.flocksize = 500;
         this.particles = [];
+        this.laststage = -1;
     }
         
 
-
+    createParticles(p5) {
+        let rerender = false;
+        if (p5.windowWidth < 1000 && this.laststage !== 0) {
+            this.flocksize = 100;
+            this.laststage = 0;
+            rerender = true;
+        } else if (p5.windowWidth > 1000 && p5.windowWidth < 1600 && this.laststage !== 1) {
+            this.flocksize = 250;
+            this.laststage = 1;
+            rerender = true;
+        } else if (p5.windowWidth >= 1600 && this.laststage !== 2){
+            this.flocksize = 500;
+            this.laststage = 2;
+            rerender = true;
+        }
+        if (rerender) {
+            this.particles = [];
+            for (let i = 0; i < this.flocksize; i++) {
+                this.particles.push(new Particle(p5));
+            }
+        }
+    }
 
 
     update() {
@@ -27,10 +48,15 @@ class Particles extends Component {
         }
     }
 
+    
     windowResized = (p5) => {
         var parent = document.getElementById("header-container");
-        console.log(parent.innerWidth)
         p5.resizeCanvas(parent.offsetWidth, this.props.height);
+        if (p5.windowWidth < 1000) {
+            this.createParticles(p5);
+        } else {
+            this.createParticles(p5);
+        }
     }
 
     setup = (p5, canvasParentRef) => {
@@ -39,10 +65,8 @@ class Particles extends Component {
         );
         p5.frameRate(this.fr);
         // use parent to render canvas in this ref (without that p5 render this canvas outside your component)
-
-        for (let i = 0; i < this.flocksize; i++) {
-            this.particles.push(new Particle(p5));
-        }
+        
+        this.createParticles(p5);
     };
     draw = p5 => {
         p5.background(26,32,43);

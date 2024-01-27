@@ -1,30 +1,208 @@
 {
+    "about": [
+        "I'm a 23-year-old Computer Science Engineering student currently in my first year of my master's studies. I have always found joy in logical problem solving and this is expressed in my love for Chess, Rubiks Cubes and my study at DTU. Throughout my bachelor's have I found algorithmics especially interesting and love the way of thinking and working.",
+        "I love to spend my free time hanging out with friends while playing a board game or having a drink. I played elite floorball when I was younger and love to play the occaisional game at my dorm whenever someone is up."
+    ],
     "education": [
         {
+            "icon": "dtu",
             "date": "2024-2026",
             "institution": "Technical University of Denmark",
             "title": "MSc. Computer Science in Engineering",
-            "description": "A Computer Science Master with a passion for innovation and problem-solving. I bring advanced expertise in algorithm design, data structures, and software engineering, coupled with a commitment to staying at the forefront of technological advancements."
+            "description": "I am currently pursuing my Master's degree in Computer Science and Engineering. The program provides an extensive work with algorithmic courses and advanced theortical concepts, computer science modelling, and software engineering. This program enables my to pursue and master other areas within Computer Science in the future.",
+            "grade": "Current grade: 12"
         },
         {
+            "icon": "dtu",
             "date": "2020-2024",
             "institution": "Technical University of Denmark",
             "title": "BSc. Software Technology",
-            "description": "As a Computer Science Bachelor, I possess a solid foundation in programming, algorithms, and software development. My academic journey has equipped me with the skills to approach complex problems analytically and to contribute effectively in the dynamic field of computer science."
+            "description": "I started on my bachelor's within Software Engineering in 2020, and fell in love with it instantly. This degree challenged my logical thinking and problem solving skills and allowed me to become a more well rounded engineer. I had a focus on algorithmics and wrote multiple projects on graph theory, which has been one of my largest academic interests.",
+            "grade": "Finished grade: 10.7"
         },
         {
+            "icon": "next",
             "date": "2016-2019",
             "institution": "NEXT - Vibenshus Gymnasium",
             "title": "HTX - Mathematics and IT",
-            "description": "During high school, I pursued a comprehensive study in Mathematics and Information Technology, laying the groundwork for my analytical and technical capabilities. This dual focus honed my problem-solving skills and provided a solid foundation for my academic and professional journey in the fields of mathematics and IT."
+            "description": "I spent 3 years completing my danish HTX degree in Mathematics and IT. This degree is where I really found my passion within Software Engineering and where i laid my analytical and technical foundation.",
+            "grade": "Finished grade: 11.2"
+        }
+    ],
+    "experience": [
+        {
+            "date": "feb. 2024 - Jun. 2024",
+            "institution": "Technical University of Denmark",
+            "title": "Teaching Assistant: Algorithms and Datastructures I",
+            "description": "Answering academic questions, presenting course material and grading assignments."
+        },
+        {
+            "date": "feb. 2022 - Jun. 2022",
+            "institution": "Technical University of Denmark",
+            "title": "Teaching Assistant: Algorithms and Datastructures I",
+            "description": "Answering academic questions, presenting course material and grading assignments."
+        },
+        {
+            "date": "Sep. 2019 - Apr. 2022",
+            "institution": "Web-Koncept",
+            "title": "Technical consultant and support",
+            "description": "Debug, optimize and update websites. Work with databases, file hosting, mailsystems and DNS. Development of smaller projects for internal use, e.g. websites, chrome extensions and scripts."
+        },
+        {
+            "date": "Jan. 2022 - Jun. 2022",
+            "institution": "Technical University of Denmark",
+            "title": "Teaching Assistant: Introductory Programming",
+            "description": "Answering academic questions, presenting course material and grading assignments."
+        },
+        {
+            "date": "Jun. 2019 - Sep. 2019",
+            "institution": "Elgiganten",
+            "title": "Technical support",
+            "description": "Customer support and technical support."
         }
     ],
     "skills": {
-            "languages": ["Python", "C", "C++", "HTML/CSS", "JavaScript"],
-            "tools": ["Windows", "Linux", "Git", "VS Code"],
-            "courses": ["Software Engineering", "Computer Systems", "Computer Science Modelling",
-            "High-Performance Computing", "Operating Systems", "Graph Theory",
-            "Algorithms and Data Structures I & II", "Discrete Mathematics I & II"]
+        "languages": [
+            {
+                "name": "Python",
+                "icon": "python",
+                "level": 100
+            },
+            {
+                "name": "C++",
+                "icon": "cplusplus",
+                "level": 95
+            },
+            {
+                "name": "C",
+                "icon": "c",
+                "level": 90
+            },
+            {
+                "name": "HTML",
+                "icon": "html5",
+                "level": 90
+            },
+            {
+                "name": "Css",
+                "icon": "css3",
+                "level": 98
+            }, 
+            {
+                "name": "JavaScript",
+                "icon": "javascript",
+                "level": 80
+            },
+            {
+                "name": "React",
+                "icon": "react",
+                "level": 75
+            },
+            {
+                "name": "Java",
+                "icon": "java",
+                "level": 65
+            },
+            
+            {
+                "name": "F#",
+                "icon": "fsharp",
+                "level": 60
+            }
+        ], 
+        "tools": [
+            {
+                "name": "Git",
+                "icon": "git",
+                "level": 85
+            },
+            {
+                "name": "GitHub",
+                "icon": "github",
+                "level": 90
+            },
+            {
+                "name": "Windows",
+                "icon": "windows8",
+                "level": 100
+            },
+            {
+                "name": "Linux",
+                "icon": "linux",
+                "level": 80
+            },
+            {
+                "name": "VS Code",
+                "icon": "vscode",
+                "level": 90
+            },
+            {
+                "name": "Vim",
+                "icon": "vim",
+                "level": 83
+            },
+            {
+                "name": "WordPress",
+                "icon": "wordpress",
+                "level": 75
+            }
+        ]
+    },
+    "projects": [
+        {
+            "title": "Chess AI",
+            "imageClass": "chess", 
+            "excerpt": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
+            "description": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
+            "github": "https://github.com/MagnusSiegumfeldt/ChessEngine",
+            "demo": "",
+            "stack": ["cplusplus"]
+        },
+        {
+            "title": "Bachelor's Thesis: Top Trees",
+            "imageClass": "toptrees", 
+            "excerpt": "In our bachelor's thesis we implemented and tested different dynamic graph algorithms, implemented upon the complex data structure splay top trees with the main challenge being an efficient dynamic bridge-finding algorithm.",
+            "description": "In our bachelor's thesis we implemented and tested different dynamic graph algorithms, implemented upon the complex data structure splay top trees with the main challenge being an efficient dynamic bridge-finding algorithm.",
+            "github": "https://github.com/MagnusSiegumfeldt/top-trees",
+            "demo": "",
+            "stack": ["cplusplus", "python"]
+        },
+        {
+            "title": "Wordle",
+            "imageClass": "wordle", 
+            "excerpt": "In this React Wordle project I utilized React to easily and efficiently design a responsive application, which provides an intuitive and enjoyable experience.",
+            "description": "In this React Wordle project I utilized React to easily and efficiently design a responsive application, which provides an intuitive and enjoyable experience.",
+            "github": "https://github.com/MagnusSiegumfeldt/wordle",
+            "demo": "https://mks-wordle.netlify.app/",
+            "stack": ["html5", "css3", "javascript", "react"]
+        },
+        {
+            "title": "Regex Crossword Solver",
+            "imageClass": "regex", 
+            "excerpt": "This project is a regex solver crossword, which utilizes parsing and lexing of regex-strings. The solver generates and processes an AST to compute a set of restrictions which can be solved using Z3.",
+            "description": "This project is a regex solver crossword, which utilizes parsing and lexing of regex-strings. The solver generates and processes an AST to compute a set of restrictions which can be solved using Z3.",
+            "github": "https://github.com/MagnusSiegumfeldt/RegexCrossword",
+            "demo": "",
+            "stack": ["python"]
+        },
+        {
+            "title": "Boids",
+            "imageClass": "boids", 
+            "excerpt": "This projects is a Boids simulation in JavaScript using p5.js, emphasizing visual appeal and showcasing complex flocking behavior through simple mathematical rules.",
+            "description": "This projects is a Boids simulation in JavaScript using p5.js, emphasizing visual appeal and showcasing complex flocking behavior through simple mathematical rules.",
+            "github": "https://github.com/MagnusSiegumfeldt/Boids",
+            "demo": "https://mks-boids.netlify.app/",
+            "stack": ["html5", "css3", "javascript"]
+        },
+        {
+            "title": "Sorting Visualizer",
+            "imageClass": "sorting", 
+            "excerpt": "In this Sorting Algorithm Project, I utilized React to create a visually appealing and intuitive way of visualizing sorting algorithms.",
+            "description": "In this Sorting Algorithm Project, I utilized React to create a visually appealing and intuitive way of visualizing sorting algorithms.",
+            "github": "https://github.com/MagnusSiegumfeldt/sorting-algorithms",
+            "demo": "https://mks-sorting-visualizer.netlify.app/",
+            "stack": ["html5", "css3", "javascript", "react"]
         }
+    ]
     
 }

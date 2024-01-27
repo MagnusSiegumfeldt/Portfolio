@@ -1,16 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../assets/data/data.json"
-import SkillCard from "./SkillCard"
 
 
 const Skills = () => {
     return (
-        <div id="education" className="alt-background">
-            <div className="section-title center">My Skills</div>
-            <div className="skill-card-container">
-                <SkillCard title={"Languages"} skills={data.skills.languages}/>
-                <SkillCard title={"Tools"} skills={data.skills.tools}/>
-                <SkillCard title={"Courses"} skills={data.skills.courses}/>
+        <div id="skills" className="alt-bg section-outer">
+            <div className="section-wrapper-narrow">
+                <div className="flex-col-l">
+                    <div className="section-title">My Skills</div>
+                    <div className="flex-col-m">
+                        <div className="flex-col-s">
+                            <h2>Languages and Frameworks</h2>
+                            <div className="skill-container">
+                            {
+                                data.skills.languages.map((elem, idx) => (
+                                    <div key={idx} className="skill-box">
+                                        <img height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
+                                        <div className="skill-box-content">
+                                            <div>{elem.name}</div>
+                                            <div className="skill-level-outer"><div className="skill-level-inner" style={{"width": elem.level + "%"}}></div></div>
+                                        </div>
+                                        
+
+                                    </div>
+                                ))
+                            }
+                            </div>
+                        </div>
+                        <div className="flex-col-s">
+                            <h2>Tools</h2>
+                            <div className="skill-container">
+                                {
+                                    data.skills.tools.map((elem, idx) => (
+                                        <div key={idx} className="skill-box">
+                                            <img height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
+                                            <div className="skill-box-content">
+                                                <div>{elem.name}</div>
+                                                <div className="skill-level-outer"><div className="skill-level-inner" style={{"width": elem.level + "%"}}></div></div>
+                                            </div>
+                                            
+
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         

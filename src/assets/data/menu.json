@@ -1,0 +1,28 @@
+{
+    "menu": [
+        {
+            "content": "Home",
+            "id": "home"
+        },
+        {
+            "content": "About",
+            "id": "about"
+        },
+        {
+            "content": "Education",
+            "id": "education"
+        },
+        {
+            "content": "Experience",
+            "id": "experience"
+        },
+        {
+            "content": "Skills",
+            "id": "skills"
+        },
+        {
+            "content": "Projects",
+            "id": "projects"
+        }
+    ]
+}
