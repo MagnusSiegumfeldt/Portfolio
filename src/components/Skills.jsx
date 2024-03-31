@@ -15,7 +15,7 @@ const Skills = () => {
                             {
                                 data.skills.languages.map((elem, idx) => (
                                     <div key={idx} className="skill-box">
-                                        <img height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
+                                        <img alt="" height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
                                         <div className="skill-box-content">
                                             <div>{elem.name}</div>
                                             <div className="skill-level-outer"><div className="skill-level-inner" style={{"width": elem.level + "%"}}></div></div>
@@ -33,7 +33,7 @@ const Skills = () => {
                                 {
                                     data.skills.tools.map((elem, idx) => (
                                         <div key={idx} className="skill-box">
-                                            <img height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
+                                            <img alt="" height="30" src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + elem.icon + "/" + elem.icon + "-original.svg"} />
                                             <div className="skill-box-content">
                                                 <div>{elem.name}</div>
                                                 <div className="skill-level-outer"><div className="skill-level-inner" style={{"width": elem.level + "%"}}></div></div>
