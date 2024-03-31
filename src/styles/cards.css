@@ -75,13 +75,6 @@
 }
 
 
-
-
-
-
-
-
-
 .modal {
     position: absolute;
     top: 50%;
@@ -120,8 +113,6 @@
 
 
 }
-
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .card-title {
         font-size: 16px;
@@ -129,11 +120,19 @@
 }
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
 
+@keyframes wipe-enter {
+    0% {
+        
+        opacity: 0;
+	}
+	100% {
+        
+        opacity: 1;
+	}
 }
-
-
-@media only screen and (min-width: 1280px) {
-    
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in-animation {
+        animation: wipe-enter 1s;
+    }
 }

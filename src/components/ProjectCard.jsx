@@ -4,7 +4,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Backdrop from '@mui/material/Backdrop';
 
-import { GitHub, OpenInNew } from '@mui/icons-material';
+import { GitHub, OpenInNew, SimCardDownload } from '@mui/icons-material';
 
 class ProjectCard extends Component {
     constructor() {
@@ -25,8 +25,17 @@ class ProjectCard extends Component {
         });
     }
     handleLinkClick = (url) => {
-        
         window.open(url, '_blank', 'noreferrer');
+    }
+
+    handleDownloadClick = (file_name) => {
+        const element = document.createElement("a");
+        element.href = file_name;
+        element.download = file_name.split("/")[1];
+
+        document.body.appendChild(element); 
+        element.click();
+        document.body.removeChild(element);
     }
 
     render() {
@@ -43,6 +52,8 @@ class ProjectCard extends Component {
                         </div>
                         <div className="project-button-container">
                             <button className="theme-button">Read more</button>
+                            {this.props.project.demo && <button className="theme-button" onClick={(e) => {e.stopPropagation(); this.handleLinkClick(this.props.project.demo)}}>Demo <OpenInNew fontSize="small"/></button>}
+                            {this.props.project.download && <button className="theme-button" onClick={(e) => {e.stopPropagation(); this.handleDownloadClick(this.props.project.download)}}>Download <SimCardDownload fontSize="small"/></button>}
                             <button className="transparent-button" onClick={(e) => {e.stopPropagation(); this.handleLinkClick(this.props.project.github)}}>GitHub <GitHub fontSize="small"/></button>
                         </div>
                     </div>
@@ -85,6 +96,7 @@ class ProjectCard extends Component {
                                 </div>
                                 <div className="project-button-container">
                                     {this.props.project.demo && <button className="theme-button" onClick={(e) => {e.stopPropagation(); this.handleLinkClick(this.props.project.demo)}}>Demo <OpenInNew fontSize="small"/></button>}
+                                    {this.props.project.download && <button className="theme-button" onClick={(e) => {e.stopPropagation(); this.handleDownloadClick(this.props.project.download)}}>Download <SimCardDownload fontSize="small"/></button>}
                                     <button className="transparent-button" onClick={(e) => {e.stopPropagation(); this.handleLinkClick(this.props.project.github)}}>GitHub <GitHub fontSize="small"/></button>
                                 </div>
 

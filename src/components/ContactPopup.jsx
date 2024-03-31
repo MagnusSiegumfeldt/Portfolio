@@ -51,8 +51,7 @@ class Banner extends Component {
                                     <div className="card-description flex-col-xs">
                                         <div><a className="light" rel="noreferrer" target="_blank" href="https://dk.linkedin.com/in/magnus-siegumfeldt-997554190"><LinkedIn /> LinkedIn</a></div>
                                         <div><a className="light" rel="noreferrer" target="_blank" href="https://github.com/MagnusSiegumfeldt"><GitHub /> GitHub</a></div>
-                                        <div><a className="light" rel="noreferrer" target="_blank" href="https://github.com/MagnusSiegumfeldt"><SimCardDownload /> Resume</a></div>
-
+                                        <div><a className="light" href="/assets/MagnusSiegumfeldt.pdf" download="MagnusSiegumfeldt.pdf"><SimCardDownload /> Resume</a></div>
                                     </div>
                                 </div>
 

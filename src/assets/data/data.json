@@ -1,7 +1,8 @@
 {
     "about": [
-        "I'm a 23-year-old Computer Science Engineering student currently in my first year of my master's studies. I have always found joy in logical problem solving and this is expressed in my love for Chess, Rubiks Cubes and my study at DTU. Throughout my bachelor's have I found algorithmics especially interesting and love the way of thinking and working.",
-        "I love to spend my free time hanging out with friends while playing a board game or having a drink. I played elite floorball when I was younger and love to play the occaisional game at my dorm whenever someone is up."
+        "I am currently in the 2nd semester of my MSc. Computer Science at the Technical University of Denmark. As an ambitious guy, I am always looking for new challenges and opportunities, and I approach problems with curiosity and a desire to learn.", 
+        "I have a strong foundation when it comes to computer systems and possess great skills within algorithms and data structures, which I have taught at university-level. This enables me to tackle complex problems and design and implement efficient solutions.",
+        "In my free time, I love to enjoy a beer with my friends, have a few games of chess, and relax with a book --- at the moment I find investing books particularly interesting."
     ],
     "education": [
         {
@@ -18,7 +19,7 @@
             "institution": "Technical University of Denmark",
             "title": "BSc. Software Technology",
             "description": "I started on my bachelor's within Software Engineering in 2020, and fell in love with it instantly. This degree challenged my logical thinking and problem solving skills and allowed me to become a more well rounded engineer. I had a focus on algorithmics and wrote multiple projects on graph theory, which has been one of my largest academic interests.",
-            "grade": "Finished grade: 10.7"
+            "grade": "Finished grade: 10.6"
         },
         {
             "icon": "next",
@@ -149,15 +150,7 @@
         ]
     },
     "projects": [
-        {
-            "title": "Chess AI",
-            "imageClass": "chess", 
-            "excerpt": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
-            "description": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
-            "github": "https://github.com/MagnusSiegumfeldt/ChessEngine",
-            "demo": "",
-            "stack": ["cplusplus"]
-        },
+        
         {
             "title": "Bachelor's Thesis: Top Trees",
             "imageClass": "toptrees", 
@@ -165,6 +158,7 @@
             "description": "In our bachelor's thesis we implemented and tested different dynamic graph algorithms, implemented upon the complex data structure splay top trees with the main challenge being an efficient dynamic bridge-finding algorithm.",
             "github": "https://github.com/MagnusSiegumfeldt/top-trees",
             "demo": "",
+            "download": "assets/TopTrees.pdf",
             "stack": ["cplusplus", "python"]
         },
         {
@@ -203,6 +197,17 @@
             "demo": "https://mks-sorting-visualizer.netlify.app/",
             "stack": ["html5", "css3", "javascript", "react"]
         }
-    ]
+    ], 
+    "projects_deak": [
+        {
+            "title": "Chess AI",
+            "imageClass": "chess", 
+            "excerpt": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
+            "description": "A Chess AI written in C++ using SDL2 for a graphical user interface. This project showcases advanced algorithms and efficient board evaluation techniques.",
+            "github": "https://github.com/MagnusSiegumfeldt/ChessEngine",
+            "demo": "",
+            "stack": ["cplusplus"]
+        }
+    ] 
     
 }

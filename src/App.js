@@ -33,7 +33,6 @@ class App extends Component {
     }
 
     openContact = () => {
-        console.log("yes")
         this.setState({
             contactOpen: true,
         });
@@ -73,9 +72,19 @@ class App extends Component {
         });
     }
 
+    handleObserver = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-animation');
+            }
+        });	
+    }
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
         window.addEventListener("scroll", this.handleScroll);
+        const observer = new IntersectionObserver(this.handleObserver);
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach((element) => observer.observe(element));
     }
     
 

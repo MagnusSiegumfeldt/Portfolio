@@ -13,7 +13,7 @@ const Education = () => {
                     <div className="flex-row-s">
                         {
                             data.education.map((elem, idx) => (
-                                <EducationCard key={idx} education={elem}/>
+                                <EducationCard key={idx} idx={idx} education={elem}/>
                             ))
                         }
                     </div>
